@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - include:
+      file: changes/create-doctors-table-1.0.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/create-patients-table-1.0.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/create-hospitals-table-1.0.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/create-doctor_patient-table-1.0.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/add-to-table-doctors-references-from-hospitals-1.0.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/add-to-table-hospitals-references-from-doctors-1.0.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/add-to-table-patients-references-from-doctors-1.0.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/add-to-table-patients-references-from-hospitals-1.0.sql
+      relativeToChangelogFile: true
+
+
